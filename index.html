@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Spotfy</title>
+    <style>
+        .divider {
+            border-left: 2px solid white;
+            height: 15px;
+            margin: 22px 6px;
+        }
+
+        .nav-link {
+            color: white;
+            font-weight: 700;
+            margin: 8px 13px;
+        }
+
+        .nav-link:hover {
+            color: green;
+        }
+
+        .container-fluid {
+            padding-left: 180px;
+            padding-right: 190px;
+        }
+
+        .navbar-brand {
+            margin-left: 20px;
+            width: 120px;
+            height: auto;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .nav-item.dropdown .nav-link::after {
+            display: none;
+        }
+
+        .navbar.bg-dark {
+            background-color: #000 !important;
+        }
+
+        .banner {
+            background-image: url('img/clean_banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 525px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+
+        .banner-bottom {
+            margin-top: 50px;
+            background-image: url('img/clean_bottomBanner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+
+        .footer-links a {
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: green;
+        }
+
+        .footer-titles {
+            font-size: 14px;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .footer-logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .dropdown-item {
+            padding-top: 30px;
+            padding-left: 2 5px;
+        }
+
+        .dropdown-item:hover {
+            background-color: black;
+        }
+
+        .text-auxiliar {
+            font-size: 13px;
+            color: rgb(179, 179, 179);
+            font-weight: 500;
+            padding-top: 10px;
+        }
+
+        .hover-green {
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .hover-green:hover {
+            color: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="img/mainlogo.png" alt="Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Premium</a>
+                        <ul class="dropdown-menu" style="width:350px;">
+                            <li><a class="dropdown-item" href="https://www.spotify.com/br-pt/premium/?ref=spotifycom_header_premium_individual"
+                                    style="height: 130px; font-weight: 700; font-size: 20px;">Premium Individual <p
+                                        class="text-auxiliar"> 1 Conta - Para uma pessoa. </p></a></li>
+
+                            <li><a class="dropdown-item" href="https://www.spotify.com/br-pt/duo/?ref=spotifycom_header_premium_duo"
+                                    style="height: 130px; font-weight: 700; font-size: 20px;">Premium Duo <p
+                                        class="text-auxiliar"> 2 Contas - Para pessoas que moram juntas. </p></a></li>
+
+                            <li><a class="dropdown-item" href="https://www.spotify.com/br-pt/family/?ref=spotifycom_header_premium_family"
+                                    style="height: 130px; font-weight: 700; font-size: 20px;">Premium Família <p
+                                        class="text-auxiliar"> 6 Contas - Para pessoas da família que moram juntas. </p>
+                                </a></li>
+
+                            <li><a class="dropdown-item" href="https://www.spotify.com/br-pt/student/?ref=spotifycom_header_premium_student"
+                                    style="height: 130px; font-weight: 700; font-size: 20px;">Premium Universitário <p
+                                        class="text-auxiliar"> 1 Conta - Com desconto para estudantes elegíveis. </p>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://support.spotify.com/br-pt/#_gl=1*1ra4vf2*_gcl_au*NzIwNjI3NTgyLjE3NDE2MjM5MDE.">Suporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Baixar</a>
+                    </li>
+                    <div class="divider"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.spotify.com/br-pt/signup">Inscreva-se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://accounts.spotify.com/pt-BR/login?continue=https%3A%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1&_locale=pt-BR">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner d-flex flex-column text-center text-white">
+        <div class="container">
+            <h1 class="fw-bold" style="font-size: 47px; padding-top: 120px;">Baixe o Spotify</h1>
+            <p class="lead fw-bold" style="font-size: 30px; margin: 18px 0;">Escute milhões de músicas e podcasts no seu
+                dispositivo.</p>
+            <a href="#" class="text-white fw-bold">Baixe direto do Spotify</a>
+        </div>
+    </section>
+
+    <div class="container text-center my-5">
+        <h2 class="fw-bold" style="padding-top: 20px;">Ouça em celulares e tablets também</h2>
+        <p style="padding-top: 15px;">Curtir o Spotify no celular ou tablet é fácil, divertido e grátis.</p>
+
+        <div class="row justify-content-center gap-2 mt-3">
+            <div class="col-auto">
+                <a href="https://www.apple.com/br/app-store/" target="_blank">
+                    <img src="img/apple_download.png" alt="App Store" class="img-fluid"
+                        style="max-width: 118px; padding-top: 4.6px;">
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="https://play.google.com/store/games?hl=pt_BR&pli=1" target="_blank">
+                    <img src="img/en_badge_web_generic.png" alt="Google Play" class="img-fluid"
+                        style="max-width: 140px;">
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="https://apps.microsoft.com/home?hl=pt-BR&gl=BR" target="_blank">
+                    <img src="img/microsoft_store_download.png" alt="Microsoft Store" class="img-fluid"
+                        style="max-width: 100px; padding-top: 8.8px;">
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="banner-bottom d-flex flex-column text-center text-white">
+        <div class="container">
+            <h2 class="fw-bold" style="font-size: 31px; padding-top: 200px;">Uma só conta, e você usa em qualquer
+                dispositivo</h2>
+            <div class="row justify-content-center mt-3">
+                <div class="col-auto hover-green">Celular</div>
+                <div class="col-auto hover-green">Computador</div>
+                <div class="col-auto hover-green">Tablet</div>
+                <div class="col-auto hover-green">Carro</div>
+                <div class="col-auto hover-green">PlayStation</div>
+                <div class="col-auto hover-green">Xbox</div>
+                <div class="col-auto hover-green">TV</div>
+                <div class="col-auto hover-green">Alto-falante</div>
+                <div class="col-auto hover-green">Web player</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/mainlogo.png" alt="Spotify Logo" class="footer-logo">
+                </div>
+                <div class="col-md-3 footer-links">
+                    <h5 class="footer-titles">EMPRESA</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.spotify.com/br-pt/about-us/contact/">Sobre</a></li>
+                        <li><a href="https://www.lifeatspotify.com/#_gl=1*ykyq6m*_gcl_au*NzIwNjI3NTgyLjE3NDE2MjM5MDE.">Empregos</a></li>
+                        <li><a href="https://newsroom.spotify.com/#_gl=1*tomsyq*_gcl_au*NzIwNjI3NTgyLjE3NDE2MjM5MDE.">For the Record</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <h5 class="footer-titles">COMUNIDADES</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://artists.spotify.com/home#_gl=1*tomsyq*_gcl_au*NzIwNjI3NTgyLjE3NDE2MjM5MDE.">Para Artistas</a></li>
+                        <li><a href="https://developer.spotify.com/#_gl=1*tomsyq*_gcl_au*NzIwNjI3NTgyLjE3NDE2MjM5MDE.">Desenvolvedores</a></li>
+                        <li><a href="https://ads.spotify.com/pt-BR/#_gl=1*tomsyq*_gcl_au*NzIwNjI3NTgyLjE3NDE2MjM5MDE.">Publicidade</a></li>
+                        <li><a href="https://investors.spotify.com/home/default.aspx#_gl=1*tomsyq*_gcl_au*NzIwNjI3NTgyLjE3NDE2MjM5MDE.">Investidores</a></li>
+                        <li><a href="https://spotifyforvendors.com">Fornecedores</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <h5 class="footer-titles">LINKS ÚTEIS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://support.spotify.com/br-pt/#_gl=1*13r6ycp*_gcl_au*NzIwNjI3NTgyLjE3NDE2MjM5MDE.">Suporte</a></li>
+                        <li><a href="https://open.spotify.com/intl-pt/#_gl=1*13r6ycp*_gcl_au*NzIwNjI3NTgyLjE3NDE2MjM5MDE.">Player da Web</a></li>
+                        <li><a href="https://www.spotify.com/br-pt/free/">Aplicativo móvel grátis</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</html>
